@@ -194,6 +194,18 @@ $else$
 $endif$
 $if(verbatim-in-note)$
 \usepackage{fancyvrb}
+$if(shade-code)$
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{247,247,247}
+\renewenvironment{verbatim}{% NG: make shaded verbatim environments
+  \VerbatimEnvironment
+  \begin{snugshade}
+  \begin{Verbatim}%
+}{%
+  \end{Verbatim}
+  \end{snugshade}%
+}
+$endif$
 $endif$
 \usepackage{xcolor}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available

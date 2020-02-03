@@ -1,3 +1,13 @@
+# Pandoc Templates
+
+## New variables
+
+### LaTeX
+
+- `shade-code`: give verbatim (code) blocks a shaded background
+
+## Original Notes
+
 The [pandoc-templates] repository contains default templates for [pandoc].
 
 If you use custom templates, we recommend forking this
